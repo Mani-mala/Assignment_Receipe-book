@@ -1,0 +1,78 @@
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* full viewport height */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  html,body{
+    height: 100%;
+  }
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  background-color: rgba(223, 226, 225, 0.4);
+  outline: none;
+  border: 1px solid #0f0404;
+  box-shadow: 4px 6px 6px rgb(17, 14, 14);
+  border-radius: 8px;
+  color:white;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #2be96a;
+  color: white;
+  font-weight:bold;
+  border-radius: 8px;
+  box-shadow: 4px 6px 6px black;
+  cursor: pointer;
+}
+button:hover{
+    transform: scale(1.2);
+    background-color: #049488;
+}
+#recipes {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.recipe {
+  border: 1px solid #b1c6ee;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #9becec;
+  box-shadow: 1px 1px 8px #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recipe:hover {
+    transform: scale(1.05);
+    background-color: #fa95af;
+    box-shadow: 1px 1px 8px rgba(172, 197, 62, 0.2);
+  }
+.recipe img {
+  width: 100%;
+  border-radius: 10px;
+}
+.noreceipe
+{
+    color:white;
+    font-size: 30px;
+
+}
